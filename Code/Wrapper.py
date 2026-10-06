@@ -14,7 +14,7 @@ import sys
 
 import numpy as np
 
-from splat_hitl.splat_hitl.bundle import SceneBundle
+from splat_hitl.bundle import SceneBundle
 
 from environment import Environment3D
 from path_planner import PathPlanner
@@ -66,7 +66,7 @@ def main(argv=None):
 
     pack = resolve_pack(a.pack)
     sys.path.insert(0, os.path.join(pack, "tools"))
-    from tools.verify_path import check_path                      # noqa: E402
+    from verify_path import check_path                      # noqa: E402
 
     map_file = os.path.join(pack, "maps", "map1_2b.txt")
     start, goal = load_pair(pack, a.pair)
@@ -90,6 +90,8 @@ def main(argv=None):
 
     if(planner.plan_path()):
         waypoints = planner.waypoints
+        planner.visualize_tree()
+        print(f"Waypoints: {waypoints}")
     else:
         sys.exit("Was not successful path planning.")
     # [[x, y, z], ...] in Vicon metres

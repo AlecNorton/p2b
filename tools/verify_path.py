@@ -18,7 +18,7 @@ from typing import List
 
 import numpy as np
 
-from splat_hitl.splat_hitl.bundle import SceneBundle
+from splat_hitl.bundle import SceneBundle
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PACK = os.path.dirname(HERE)

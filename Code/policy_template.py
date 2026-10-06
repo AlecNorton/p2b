@@ -18,8 +18,8 @@ import os
 
 import numpy as np
 
-from splat_hitl.splat_hitl.commands import Action
-from splat_hitl.splat_hitl.policy import Policy
+from splat_hitl.commands import Action
+from splat_hitl.policy import Policy
 
 from environment import Environment3D
 from path_planner import PathPlanner

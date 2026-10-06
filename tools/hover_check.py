@@ -46,7 +46,7 @@ def main(argv=None):
 
     step(2, "import splat_hitl")
     try:
-        from splat_hitl.splat_hitl.bundle import SceneBundle
+        from splat_hitl.bundle import SceneBundle
     except ImportError as e:
         die("splat_hitl is not importable: %s" % e,
             "See install.md. The branch is `dev` -- `main` cannot load the\n"

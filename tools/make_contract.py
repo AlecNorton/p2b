@@ -10,7 +10,7 @@ import argparse
 import os
 import sys
 
-from splat_hitl.splat_hitl.contract import ActionSpec, ControlSpec, PolicyContract
+from splat_hitl.contract import ActionSpec, ControlSpec, PolicyContract
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PACK = os.path.dirname(HERE)
