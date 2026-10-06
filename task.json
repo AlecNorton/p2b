@@ -1,0 +1,21 @@
+{
+  "_comment": "Start/goal pairs in Vicon metres, the frame of map1_2b.txt. The test pairs are released 24 hours before the deadline.",
+  "frame": "vicon_metres",
+  "map": "map1_2b.txt",
+  "pairs": [
+    {
+      "name": "train_1",
+      "start": [
+        -0.1,
+        0.25,
+        1.0
+      ],
+      "goal": [
+        5.0,
+        0.45,
+        0.8
+      ],
+      "straight_line_min_clearance_m": 0.008
+    }
+  ]
+}

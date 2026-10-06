@@ -1,0 +1,13 @@
+# map1_2b -- Washburn flight volume, Vicon frame, metres
+# Origin at the corner of the L tape, +x and +y along its arms, z = 0 at the floor.
+# The boundary is the flyable box, not the room: zmin is 0.30.
+#
+# boundary xmin ymin zmin xmax ymax zmax
+# block    xmin ymin zmin xmax ymax zmax r g b
+
+boundary  -0.50  -1.20  0.30   5.25   1.20   1.80
+
+block      1.80   0.61  0.00   2.00   1.07   0.69   255    0    0
+block      2.50  -0.90  0.00   2.74  -0.66   1.26     0  255    0
+block      3.50   0.40  0.00   3.70   0.86   1.36     0    0  255
+block      4.76  -0.67  0.00   5.00   0.00   1.15   255  255    0
